@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_500"
+    android:backgroundTint="@color/purple_500"
+    tools:context=".activities.MainActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/logosmk"
+        android:id="@+id/logo_dashboard"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo_dashboard"
+        android:text="Hi, Farhan Anwar Nugraha"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:textStyle="bold"
+        android:id="@+id/teks_nama"/>
+
+    <TextView
+        android:id="@+id/jurusan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teks_nama"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:text="X - Multimedia"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jurusan"
+        android:text="12345678"
+        android:textColor="@color/white"
+        android:textSize="1dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:textStyle="bold"
+        android:id="@+id/nis"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-20dp"
+        android:background="@drawable/background">
+
+    </RelativeLayout>
+<!--    //Menu 1-->
+    <RelativeLayout
+        android:id="@+id/menu_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/oval"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_person_pin_24" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_menu1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menu_profile"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="10dp"
+        android:text="Profile"
+        android:textColor="@color/purple_700"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <!--    //Menu 2-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/oval"
+        android:layout_marginTop="250dp"
+        android:layout_toEndOf="@id/menu_profile"
+        android:layout_marginStart="20dp"
+        android:padding="20dp"
+        android:id="@+id/generateqr">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_qr_code_24"
+            android:id="@+id/gen_qr"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/text_menu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generat QR"
+        android:textColor="@color/purple_700"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/text_menu1"
+        android:layout_below="@id/generateqr"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="36dp"/>
+
+    <!--    //Menu 3-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/oval"
+        android:layout_marginTop="250dp"
+        android:layout_toEndOf="@id/generateqr"
+        android:layout_marginStart="20dp"
+        android:padding="20dp"
+        android:id="@+id/detail_absen">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_file_copy_24"
+            android:id="@+id/detail"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detail\nPresensi"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/text_menu2"
+        android:layout_below="@id/generateqr"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="36dp"/>
+
+    <Button
+        android:id="@+id/btn_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/generateqr"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="Scan disinin"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_scan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#F44336"
+        android:textColor="@color/white"
+        android:text="Keluar" />
+
+</RelativeLayout>

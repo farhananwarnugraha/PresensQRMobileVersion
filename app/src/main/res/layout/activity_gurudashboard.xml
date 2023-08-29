@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeGuruActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/bglog" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="100dp"
+                    android:layout_height="78dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.504"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.072"
+                    app:srcCompat="@drawable/logorota" />
+
+                <TextView
+                    android:id="@+id/textNamaGuru"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Guru"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.511"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView10"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/nip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kelas"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="normal"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textNamaGuru"
+                    app:layout_constraintVertical_bias="0.437" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Main Menu"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#3F979B"
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/con_jadwal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/menu">
+
+                            <ImageView
+                                android:id="@+id/imageView2"
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginEnd="30dp"
+                                android:layout_marginBottom="30dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/icon_jadwal" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            android:id="@+id/txtJadwal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Pelajaran diampu"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/con_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="100dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/menu">
+
+                            <ImageView
+                                android:id="@+id/imageprof"
+                                android:layout_width="72dp"
+                                android:layout_height="62dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginEnd="30dp"
+                                android:layout_marginBottom="30dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/baseline_person_pin_24" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            android:id="@+id/textProfile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Profile"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/con_presensi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/menu">
+
+                            <ImageView
+                                android:id="@+id/imgpresensi"
+                                android:layout_width="81dp"
+                                android:layout_height="66dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginBottom="16dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/baseline_qr_code_scanner_24" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            android:id="@+id/txtpresensi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Presensi"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/con_pengumuman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="100dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/menu">
+
+                            <ImageView
+                                android:id="@+id/imaginfoizin"
+                                android:layout_width="64dp"
+                                android:layout_height="61dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="20dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/baseline_speaker_notes_24" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            android:id="@+id/textInfo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Informasi"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="13dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:paddingStart="75dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/con_logout"
+                            android:layout_width="100dp"
+                            android:layout_height="78dp"
+                            android:background="@drawable/menu">
+
+                            <ImageView
+                                android:id="@+id/imglogout"
+                                android:layout_width="54dp"
+                                android:layout_height="52dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginBottom="16dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/baseline_exit_to_app_24" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            android:id="@+id/txtout"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Keluar"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

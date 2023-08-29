@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CDE1E2"
+    android:orientation="vertical"
+    tools:context=".izinActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/bagianatas" />
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pengajuan Izin Tidak Masuk"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView9"
+                    app:layout_constraintHorizontal_bias="0.063"
+                    app:layout_constraintStart_toEndOf="@+id/imageView10"
+                    app:layout_constraintTop_toTopOf="@+id/imageView9"
+                    app:layout_constraintVertical_bias="0.434" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView9"
+                    app:layout_constraintVertical_bias="0.457"
+                    app:srcCompat="@drawable/logorota" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Formulis Izin Sekolah"
+                android:textAlignment="center"
+                android:layout_marginTop="10px"
+                android:background="@drawable/btn_bg"
+                android:layout_marginStart="90dp"
+                android:layout_marginEnd="90dp"
+                android:paddingVertical="5dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+
+
+            <EditText
+                android:id="@+id/etnisIzinketerangan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/grey_bg"
+                android:hint="Keterangan"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:textColorHint="#858585"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imageUp"
+                android:layout_width="250dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_height="121dp"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+
+                android:layout_gravity="center"
+                android:text="@string/galery"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/buttonCam"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/photo"
+                tools:ignore="MissingConstraints" />
+
+            <ProgressBar
+                android:id="@+id/progressBar4"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/btnizin"
+                android:text="Kirim"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:paddingHorizontal="100dp"
+                android:textColor="#F9F54B"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

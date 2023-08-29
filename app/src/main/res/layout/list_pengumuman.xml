@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/isi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="isi"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tanggal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/isi"
+        android:layout_marginTop="5dp"
+        android:text="tanggal"
+        android:textColor="@color/black" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tanggal"
+        android:layout_marginTop="13dp"
+        android:background="@color/black" />
+
+</RelativeLayout>

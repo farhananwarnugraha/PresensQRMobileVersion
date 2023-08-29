@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ScannerQR</string>
+    <string name="title_activity_login_guru">LoginActivityGuru</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="logo">Logo SMK Rota</string>
+    <string name="txt_log_guru">MASUK SEBAGAI GURU</string>
+    <string name="txt_log_siswa">MASUK SEBAGAI SISWA</string>
+    <string name="galery">Ambil dari galeri</string>
+    <string name="photo">Ambil dari kamera</string>
+    <string name="erKeterangan">Keterangan masih kosong</string>
+    <string name="choose_a_picture">Pilih Gambar</string>
+    <string name="no_image">Tidak ada gambar/foto</string>
+</resources>

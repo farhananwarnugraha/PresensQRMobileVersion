@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CDE1E2"
+    android:orientation="vertical"
+    tools:context=".izinActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/bagianatas" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="10dp"
+                        app:srcCompat="@drawable/logorota" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/nama_siswa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="2dp"
+                            android:text="Nama Anda"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/kelas_siswa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nama Anda"
+                            android:textColor="@color/white"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Formulis Izin Sekolah"
+                android:textAlignment="center"
+                android:layout_marginTop="10px"
+                android:background="@drawable/btn_bg"
+                android:layout_marginStart="90dp"
+                android:layout_marginEnd="90dp"
+                android:paddingVertical="5dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+
+            <EditText
+                android:id="@+id/etnisIzinsiswa"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/grey_bg"
+                android:hint="Nomor Induk"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:textColorHint="#858585"
+                android:textSize="16sp" />
+
+
+
+            <EditText
+                android:id="@+id/etnisIzinkelas"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/grey_bg"
+                android:hint="Kelas"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:textColorHint="#858585"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etnisIzinjurusan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/grey_bg"
+                android:hint="Jurusan"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:textColorHint="#858585"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etnisIzinketerangan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/grey_bg"
+                android:hint="Keterangan"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:textColorHint="#858585"
+                android:textSize="16sp" />
+            
+            <ImageView
+                android:id="@+id/clickUploadBukti"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/upload_surat"
+                android:layout_margin="10dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/btnizin"
+                android:text="Kirim"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:paddingHorizontal="100dp"
+                android:textColor="#F9F54B"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
